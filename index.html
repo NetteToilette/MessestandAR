@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nette Toilette AR</title>
+<style>
+html,body{margin:0;height:100%;font-family:-apple-system,system-ui,sans-serif;background:#f0f4f8;color:#1e3c5a}
+main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;text-align:center}
+a.ar img{width:min(80vw,420px);border-radius:20px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+p{max-width:420px;line-height:1.5}
+small{color:#678}
+</style>
+</head>
+<body>
+<main>
+ <h1>Nette Toilette</h1>
+ <!-- Das <img> muss direkt im <a> stehen, sonst öffnet Safari kein Quick Look.
+      #allowsContentScaling=0 verhindert das Verkleinern/Vergrößern per Zwei-Finger-Geste,
+      das Modell bleibt in Originalgröße. Zum freien Skalieren die Endung entfernen. -->
+ <a class="ar" rel="ar" href="./nettetoilette.usdz#allowsContentScaling=0">
+  <img src="./vorschau.jpg" alt="Nette Toilette in AR ansehen">
+ </a>
+ <p>Tippe auf das Bild. Dann Kamera langsam über den Boden bewegen, bis das Modell platziert werden kann.</p>
+ <small>Funktioniert in Safari auf dem iPhone/iPad.</small>
+</main>
+</body>
+</html>
